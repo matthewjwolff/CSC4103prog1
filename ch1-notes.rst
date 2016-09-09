@@ -8,10 +8,10 @@ An Operating System is a program that manages a computer's hardware
 -----------------------------
 
 An computer system can be divided into four parts:
-- Hardware (including CPU, Memory, IO devices)
-- Operating System (Controls hardware)
-- Application Programs (use resources to solve problems for users)
-- Users
+* Hardware (including CPU, Memory, IO devices)
+* Operating System (Controls hardware)
+* Application Programs (use resources to solve problems for users)
+* Users
 
 Viewpoints of a system
 
@@ -19,28 +19,28 @@ Viewpoints of a system
 _______________
 
 Systems are made in various ways for the user
-- Personal machine (optimized for ease of use and resource monopolization)
-- Terminal connected to Mainframe or Minicomputer (optimized for resource sharing)
-- Workstation connected to other workstations and servers (a compromise of the above)
-- Mobile computers (touch screen and battery constraints)
-- Embedded systems (little or no user view)
+* Personal machine (optimized for ease of use and resource monopolization)
+* Terminal connected to Mainframe or Minicomputer (optimized for resource sharing)
+* Workstation connected to other workstations and servers (a compromise of the above)
+* Mobile computers (touch screen and battery constraints)
+* Embedded systems (little or no user view)
 
 1.1.2 System View
 _________________
 
 Operating systems can operate as:
-- Resource allocator (decides how resources are used and what user gets to use them when)
-- Control program (manages execution of user programs to prevent errors and improper use of the computer)
+* Resource allocator (decides how resources are used and what user gets to use them when)
+* Control program (manages execution of user programs to prevent errors and improper use of the computer)
 
 1.1.3 Defining Operating Systems
 ________________________________
 
 Moore's Law predicted that transistors would double every 18 months; this law shows the growing complexity of operating systems.
 What of this complexity can be classified as the "operating system"?
-- Simple viewpoint: everything a vendor ships (Windows, OSX non power-users)
-- More accurate: the single program running at all times: the kernel (Linux)
-- Often an *operating system* also includes the **system programs**: utilities useful to most application software
-- Mobile OSs also include **middleware** which provide software frameworks to application developers (iOS, Android)
+* Simple viewpoint: everything a vendor ships (Windows, OSX non power-users)
+* More accurate: the single program running at all times: the kernel (Linux)
+* Often an *operating system* also includes the **system programs**: utilities useful to most application software
+* Mobile OSs also include **middleware** which provide software frameworks to application developers (iOS, Android)
 
 1.2 Computer-System Organization
 --------------------------------
@@ -58,9 +58,9 @@ How a computer boots
 3) Kernel then loads **system processes** and **system daemons** that provide basic operating system functionality.
 
 Now that the Operating System has booted, what does it do?
-- Handles **interrupts** which signal the occurrence of an important event from hardware or software
-- Exposes **system calls** to software for software to generate interrupts
-- When the CPU finds an interrupt, it transfers control to a OS service determined by the **interrupt table**
+* Handles **interrupts** which signal the occurrence of an important event from hardware or software
+* Exposes **system calls** to software for software to generate interrupts
+* When the CPU finds an interrupt, it transfers control to a OS service determined by the **interrupt table**
 
 **Figure 1.3** When a user requests a file to be written, the I/O device begins writing. Upon completion, the I/O device triggers an interrupt, which causes the CPU to trigger the event handler for that event. Then the CPU returns control to the user's process.
 
