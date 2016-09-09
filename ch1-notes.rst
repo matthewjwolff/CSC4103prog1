@@ -7,11 +7,11 @@ An Operating System is a program that manages a computer's hardware
 1.1 What Operating Systems Do
 -----------------------------
 
-An computer system can be divided into four parts:
-* Hardware (including CPU, Memory, IO devices)
-* Operating System (Controls hardware)
-* Application Programs (use resources to solve problems for users)
-* Users
+An computer system can be divided into four parts
++ Hardware (including CPU, Memory, IO devices)
++ Operating System (Controls hardware)
++ Application Programs (use resources to solve problems for users)
++ Users
 
 Viewpoints of a system
 
