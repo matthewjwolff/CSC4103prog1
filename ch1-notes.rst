@@ -3,7 +3,7 @@ Chapter 1: Introduction
 
 An Operating System is a program that manages a computer's hardware
 
-** Figure 1.1** Different users use different programs on the same system. The Operating system coordinates the execution of these programs to ensure that each user can use the hardware fairly and efficiently.
+**Figure 1.1** Different users use different programs on the same system. The Operating system coordinates the execution of these programs to ensure that each user can use the hardware fairly and efficiently.
 
 1.1 What Operating Systems Do
 -----------------------------
