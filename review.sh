@@ -20,14 +20,10 @@ do
 	NOTICK=${FILE:2:-2}
 	# Do a test run of highlight to see if it can understand the file extension
 	# (better than using the file command)
-	ERROR=$(
-		# Execute the command, but dump output to /dev/null
-		(highlight -O ansi $NOTICK > /dev/null)
-		# Route the stderr to stdout so it will be store to ERROR
-		2>&1
-	)
+	         # Execute command                 dump stdout  route stderr to stdout so that it will be stored in ERROR
+	ERROR=$((highlight -O ansi ch1-notes.rst > /dev/null) 2>&1)
 	# If ERROR is empty
-	if [[ -z ERROR ]]
+	if [[ -z $ERROR ]]
 	then
 		# Pretty print code, pipe to nl for line numbers
 		highlight -O ansi $NOTICK | nl
