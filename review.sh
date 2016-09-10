@@ -20,11 +20,14 @@ do
 	NOTICK=${FILE:2:-2}
 	# Do a test run of highlight to see if it can understand the file extension
 	# (better than using the file command)
-	         # Execute command                 dump stdout  route stderr to stdout so that it will be stored in ERROR
+	# First, execute the highlight command and pipe stdout to /dev/null
+	# Then take the result of that execution and pipe stderr to stdout
+	# Thus ERROR gets the value of whatever was written to STDERR
 	ERROR=$((highlight -O ansi $NOTICK > /dev/null) 2>&1)
 	# If ERROR is empty
 	if [[ -z $ERROR ]]
 	then
+		clear
 		# Pretty print code, pipe to nl for line numbers
 		highlight -O ansi $NOTICK | nl
 		# wait for user ENTER
