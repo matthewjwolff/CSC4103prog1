@@ -21,7 +21,7 @@ do
 	# Do a test run of highlight to see if it can understand the file extension
 	# (better than using the file command)
 	         # Execute command                 dump stdout  route stderr to stdout so that it will be stored in ERROR
-	ERROR=$((highlight -O ansi ch1-notes.rst > /dev/null) 2>&1)
+	ERROR=$((highlight -O ansi $NOTICK > /dev/null) 2>&1)
 	# If ERROR is empty
 	if [[ -z $ERROR ]]
 	then
@@ -31,8 +31,6 @@ do
 		read whocares
 		clear
 	fi
-	# Bash variables are global
-	ERROR=""
 done
 
 # return user to directory at start of script
