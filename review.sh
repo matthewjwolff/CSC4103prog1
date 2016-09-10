@@ -31,6 +31,8 @@ do
 		read whocares
 		clear
 	fi
+	# Bash variables are global
+	ERROR=""
 done
 
 # return user to directory at start of script
